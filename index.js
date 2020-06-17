@@ -14,6 +14,12 @@ console.log('isExistingTriangle(1, 2, 3) = ', isExistingTriangle(1, 2, 3));
 console.log('isExistingTriangle(2, 4, 7) = ', isExistingTriangle(2, 4, 7));
 console.log('isExistingTriangle(2, 2, 3) = ', isExistingTriangle(2, 2, 3));
 
+console.log('');
+
+console.log('rhombusArea(12, 10) = ', rhombusArea(12, 10));
+console.log('rhombusArea(-2, 4) = ', rhombusArea(-2, 4));
+
+
 /**
  *
  * @param {number} age
@@ -45,4 +51,17 @@ function checkMultiplicity(number, multiplicity) {
  */
 function isExistingTriangle(a, b, c) {
   return a + b > c && a + c > b && b + c > a;
+}
+
+/**
+ *
+ * @param {number} side
+ * @param {number} height
+ * @returns {null|number}
+ */
+function rhombusArea(side, height) {
+  if (side > 0 && height > 0) {
+    return side * height;
+  }
+  return null;
 }
