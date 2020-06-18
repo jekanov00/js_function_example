@@ -29,6 +29,12 @@ console.log('');
 console.log('triangleArea(5, 4) = ', triangleArea(5, 4));
 console.log('triangleArea(-2, 4) = ', triangleArea(-2, 4));
 
+console.log('');
+
+console.log('rectangleArea(5, 4) = ', rectangleArea(5, 4));
+console.log('rectangleArea(-2, 4) = ', rectangleArea(-2, 4));
+
+
 /**
  *
  * @param {number} age
@@ -97,6 +103,19 @@ function cylinderArea(radius, height) {
 function triangleArea(base, heightToBase) {
   if (base > 0 && heightToBase > 0) {
     return (base * heightToBase) / 2;
+  }
+  return null;
+}
+
+/**
+ *
+ * @param {number} length
+ * @param {number} width
+ * @returns {null|number}
+ */
+function rectangleArea(length, width) {
+  if (length > 0 && width > 0) {
+    return length * width;
   }
   return null;
 }
