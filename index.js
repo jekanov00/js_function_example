@@ -40,7 +40,7 @@ console.log('rectangleArea(-2, 4) = ', rectangleArea(-2, 4));
  * @param {number} age
  * @returns {null|boolean}
  */
-function isAdult(age) {
+function isAdult (age) {
   if (age >= 0) {
     return age >= 18;
   }
@@ -53,7 +53,7 @@ function isAdult(age) {
  * @param {number} multiplicity
  * @returns {boolean}
  */
-function checkMultiplicity(number, multiplicity) {
+function checkMultiplicity (number, multiplicity) {
   return number % multiplicity === 0;
 }
 
@@ -64,7 +64,7 @@ function checkMultiplicity(number, multiplicity) {
  * @param {number} c
  * @returns {boolean}
  */
-function isExistingTriangle(a, b, c) {
+function isExistingTriangle (a, b, c) {
   return a + b > c && a + c > b && b + c > a;
 }
 
@@ -74,7 +74,7 @@ function isExistingTriangle(a, b, c) {
  * @param {number} height
  * @returns {null|number}
  */
-function rhombusArea(side, height) {
+function rhombusArea (side, height) {
   if (side > 0 && height > 0) {
     return side * height;
   }
@@ -87,7 +87,7 @@ function rhombusArea(side, height) {
  * @param {number} height
  * @returns {null|number}
  */
-function cylinderArea(radius, height) {
+function cylinderArea (radius, height) {
   if (radius > 0 && height > 0) {
     return 2 * Math.PI * radius * height + 2 * Math.PI * radius * radius;
   }
@@ -100,7 +100,7 @@ function cylinderArea(radius, height) {
  * @param {number} heightToBase
  * @returns {null|number}
  */
-function triangleArea(base, heightToBase) {
+function triangleArea (base, heightToBase) {
   if (base > 0 && heightToBase > 0) {
     return (base * heightToBase) / 2;
   }
@@ -113,7 +113,7 @@ function triangleArea(base, heightToBase) {
  * @param {number} width
  * @returns {null|number}
  */
-function rectangleArea(length, width) {
+function rectangleArea (length, width) {
   if (length > 0 && width > 0) {
     return length * width;
   }
