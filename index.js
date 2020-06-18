@@ -24,6 +24,10 @@ console.log('');
 console.log('cylinderArea(3, 5) = ', cylinderArea(3, 5));
 console.log('cylinderArea(-2, 4) = ', cylinderArea(-2, 4));
 
+console.log('');
+
+console.log('triangleArea(5, 4) = ', triangleArea(5, 4));
+console.log('triangleArea(-2, 4) = ', triangleArea(-2, 4));
 
 /**
  *
@@ -80,6 +84,19 @@ function rhombusArea(side, height) {
 function cylinderArea(radius, height) {
   if (radius > 0 && height > 0) {
     return 2 * Math.PI * radius * height + 2 * Math.PI * radius * radius;
+  }
+  return null;
+}
+
+/**
+ *
+ * @param {number} base
+ * @param {number} heightToBase
+ * @returns {null|number}
+ */
+function triangleArea(base, heightToBase) {
+  if (base > 0 && heightToBase > 0) {
+    return (base * heightToBase) / 2;
   }
   return null;
 }
