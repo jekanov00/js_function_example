@@ -19,6 +19,11 @@ console.log('');
 console.log('rhombusArea(12, 10) = ', rhombusArea(12, 10));
 console.log('rhombusArea(-2, 4) = ', rhombusArea(-2, 4));
 
+console.log('');
+
+console.log('cylinderArea(3, 5) = ', cylinderArea(3, 5));
+console.log('cylinderArea(-2, 4) = ', cylinderArea(-2, 4));
+
 
 /**
  *
@@ -62,6 +67,19 @@ function isExistingTriangle(a, b, c) {
 function rhombusArea(side, height) {
   if (side > 0 && height > 0) {
     return side * height;
+  }
+  return null;
+}
+
+/**
+ *
+ * @param {number} radius
+ * @param {number} height
+ * @returns {null|number}
+ */
+function cylinderArea(radius, height) {
+  if (radius > 0 && height > 0) {
+    return 2 * Math.PI * radius * height + 2 * Math.PI * radius * radius;
   }
   return null;
 }
